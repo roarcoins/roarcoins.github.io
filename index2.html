@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<head>
+<title>Roarcoins - Crypto Mining & Research</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 48px 32px;
+  text-decoration: none;
+  font-size: 24px;
+  cursor: default;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #dde;
+  color: white;
+}
+
+.topnav a img {
+  background-color: white;
+}
+
+.logo {
+padding: left;
+}
+
+
+.centered {
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Cambria;
+  color: white;
+  font-size: 38px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b38f00; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b38f00; 
+}
+
+button, button::after {
+  width: 200px;
+  height: 86px;
+  font-size: 36px;
+  font-family: 'Bebas Neue', cursive;
+  background: blue;
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 88px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+}
+
+button::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'START';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: gr;
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+button:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topnav">
+
+<a class="lo"><img class="logo" id="logo" width="56%" src="logo.png" alt="Roarcoins"></a>
+
+
+<center>  <a class="active" href="#home">Home</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a></center>
+  <a href="#about">Donate</a></center>
+</div>
+
+<div class="container">
+  <img src="crypto.png" alt="Roarcoins" style="width:100%;" width="100%">
+  <div class="centered">Crypto. Redefined.</div>
+</div>
+
+<br>
+
+<center style="font-family: Cambria; font-size: 32px">We Mine & Research Bitcoin And Ethereum.</center>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+<img width="20%" src="bitcoin.png" alt="Roarcoins">
+
+<img width="20%" src="ethereum.png" alt="Roarcoins">
+</center>
+
+<br>
+<br>
+
+<center><button onclick="window.location.href='/donate'">DONATE</button></center>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center><p style="font-family: Cambria; font-size: 24px">Roarcoins, the Roarcoins logo, and all other related symbols, titles, and logos are part of the Roarcoins Group. &copy 2021 Roarcoins.</p></center>
+<center><p style="font-family: Cambria; font-size: 24px">Bitcoin, the Bitcoin logo, Bitcoin.com, and all other related symbols, titles, and logos are registered trademarks of Saint Bitts LLC.</p></center>
+<center><p style="font-family: Cambria; font-size: 24px">Ethereum, the Ethereum logo, Ethereum.org, and all other related symbols, titles, and logos are registered trademarks of the Ethereum Foundation.</p></center>
+
+</body>
+
+</html>
